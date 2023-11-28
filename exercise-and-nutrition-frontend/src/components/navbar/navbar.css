@@ -1,0 +1,34 @@
+.navbar {
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    gap: 20px;
+}
+
+.navbar .title {
+    font-family: 'Baloo Da 2', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 40px;
+    text-align: center;
+  }
+
+.navigate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.navigate li a {
+    font-family: 'Baloo Da 2', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    color: black;
+}
+
+.navigate li a:hover {
+    color: blue;
+}

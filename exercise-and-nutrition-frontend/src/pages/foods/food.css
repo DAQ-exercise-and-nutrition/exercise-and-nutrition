@@ -1,0 +1,55 @@
+.food-section {
+    position: relative;
+    width: 80%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    overflow: visible;
+    margin-bottom: 16px;
+
+    
+}
+
+.food-section .food-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.food-section .food-title h3 {
+    font-family: 'Baloo Da 2', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+}
+
+.food-section .food-title input {
+    border-radius: 20px;
+    border: 1px solid #000;
+    background: #FFF;
+    height: 40px;
+    padding: 12px 24px;
+}
+
+.food-section .food-card {
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    overflow: visible;
+    gap: 16px;
+}
+
+
+@media screen and (max-width: 900px) {
+    .food-section .food-card {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media screen and (max-width: 600px) {
+    .food-section .food-card {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
