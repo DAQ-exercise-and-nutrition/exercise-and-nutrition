@@ -50,7 +50,7 @@ Before getting started with the A Guide to Exercise and Nutrition project, ensur
 
 ## Getting Started
 
-1. Create database schema following CSV file.
+1. Create database schema following CSV file in data folder.
    
    <img width="1172" alt="Screenshot 2566-11-29 at 01 03 24" src="https://github.com/DAQ-exercise-and-nutrition/exercise-and-nutrition/assets/92836354/d31db27a-1aba-4bca-af24-4b38a0e77a34">
 
@@ -59,11 +59,11 @@ Before getting started with the A Guide to Exercise and Nutrition project, ensur
    <img width="567" alt="Screenshot 2566-11-29 at 01 07 19" src="https://github.com/DAQ-exercise-and-nutrition/exercise-and-nutrition/assets/92836354/e8e06b9f-f77a-4a3a-bb5f-706301f429e4">
 
   
-3. Put column name following CSV file
+3. Put column name following CSV file.
    
    <img width="636" alt="Screenshot 2566-11-29 at 01 05 42" src="https://github.com/DAQ-exercise-and-nutrition/exercise-and-nutrition/assets/92836354/2851982f-2815-4af6-b590-8aa770453c9f">
 
-4. Run both backend and frontend file follwing inside README instruction
+4. Run both backend and frontend folder follwing inside README instruction.
 
 
 ## License
