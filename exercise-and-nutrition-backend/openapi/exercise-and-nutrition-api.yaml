@@ -1,0 +1,472 @@
+openapi: 3.0.0
+info:
+  title: A guide to exercise and nutrition
+  description:
+    Data that provide information of exercise for each body part, food data that provide nutrition and calorie of food, reps/set data that provide information about how many reps you should play or how many set and rest between set following each condition, nutrition data that following the goal that user needed for example if user need to increase muscle you should eat high-protein food
+  version: 3.0.0
+servers:
+  - url: http://127.0.0.1:8080/exercise-and-nutrition-api/v3
+
+tags:
+  - name: Exercise
+    description: Everything about exercise
+  - name: Food
+    description: Everything about food
+  - name: Nutrition
+    description: Everything about nutrition
+  - name: Reps_set
+    description: Everything about reps_set
+  - name: User
+    description: Everything about user
+
+paths:
+  /exercises:
+    get:
+      tags:
+          - Exercise
+      summary: Get a list of all exercises
+      operationId: controller.get_exercises
+      parameters:
+        - name: target
+          in: query
+          required: false
+          schema:
+            type: string
+        - name: limit
+          in: query
+          required: false
+          schema:
+            type: integer
+            minimum: 1
+        - name: randomize
+          in: query
+          required: false
+          schema:
+            type: boolean
+      responses:
+        200:
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Exercise'
+
+  /exercises/body_part/{bodyPart}:
+    get:
+      tags:
+        - Exercise
+      summary: Get exercises for a specific body part
+      operationId: controller.get_exercises_by_body_part
+      parameters:
+        - name: bodyPart
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: limit
+          in: query
+          required: false
+          schema:
+            type: integer
+            minimum: 1
+        - name: randomize
+          in: query
+          required: false
+          schema:
+            type: boolean
+      responses:
+        200:
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Exercise'
+
+  /exercises/target/{target}:
+    get:
+      tags:
+        - Exercise
+      summary: Get exercises for a specific target
+      operationId: controller.get_exercises_by_target
+      parameters:
+        - name: target
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: limit
+          in: query
+          required: false
+          schema:
+            type: integer
+            minimum: 1
+        - name: randomize
+          in: query
+          required: false
+          schema:
+            type: boolean
+      responses:
+        200:
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Exercise'
+
+
+  /foods:
+    get:
+      tags:
+        - Food
+      summary: Get a list of all foods
+      operationId: controller.get_foods
+      parameters:
+        - name: diet
+          in: query
+          required: false
+          schema:
+            type: string
+        - name: meal_type
+          in: query
+          required: false
+          schema:
+            type: string
+        - name: limit
+          in: query
+          required: false
+          schema:
+            type: integer
+            minimum: 1
+        - name: randomize
+          in: query
+          required: false
+          schema:
+            type: boolean
+      responses:
+        200:
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Food'
+
+
+  /foods/diet/{diet}:
+    get:
+      tags:
+        - Food
+      summary: Get foods for a specific diet
+      operationId: controller.get_foods_by_diet
+      parameters:
+        - name: diet
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: limit
+          in: query
+          required: false
+          schema:
+            type: integer
+            minimum: 1
+        - name: randomize
+          in: query
+          required: false
+          schema:
+            type: boolean
+      responses:
+        200:
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Food'
+
+  /foods/meal_type/{mealType}:
+    get:
+      tags:
+        - Food
+      summary: Get foods for a specific meal type
+      operationId: controller.get_foods_by_meal_type
+      parameters:
+        - name: mealType
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: limit
+          in: query
+          required: false
+          schema:
+            type: integer
+            minimum: 1
+        - name: randomize
+          in: query
+          required: false
+          schema:
+            type: boolean
+      responses:
+        200:
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Food'
+
+
+
+  /nutrition:
+    get:
+      tags:
+        - Nutrition
+      summary: Get a list of all nutrition recommendations
+      operationId: controller.get_nutrition
+      parameters:
+        - name: limit
+          in: query
+          required: false
+          schema:
+            type: integer
+            minimum: 1
+        - name: randomize
+          in: query
+          required: false
+          schema:
+            type: boolean
+      responses:
+        200:
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Nutrition'
+
+  /nutrition/goal/{goal}:
+    get:
+      tags:
+        - Nutrition
+      summary: Get nutrition recommendations for a specific goal
+      operationId: controller.get_nutrition_by_goal
+      parameters:
+        - name: goal
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: limit
+          in: query
+          required: false
+          schema:
+            type: integer
+            minimum: 1
+        - name: randomize
+          in: query
+          required: false
+          schema:
+            type: boolean
+      responses:
+        200:
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Nutrition'
+
+
+
+  /reps_set:
+    get:
+      tags:
+        - Reps_set
+      summary: Get a list of all reps set recommendations
+      operationId: controller.get_reps_set
+      parameters:
+        - name: limit
+          in: query
+          required: false
+          schema:
+            type: integer
+            minimum: 1
+        - name: randomize
+          in: query
+          required: false
+          schema:
+            type: boolean
+      responses:
+        200:
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Reps_set'
+
+  /reps_set/goal/{goal}:
+    get:
+      tags:
+        - Reps_set
+      summary: Get reps set recommendations for a specific goal
+      operationId: controller.get_reps_set_by_goal
+      parameters:
+        - name: goal
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: limit
+          in: query
+          required: false
+          schema:
+            type: integer
+            minimum: 1
+        - name: randomize
+          in: query
+          required: false
+          schema:
+            type: boolean
+      responses:
+        200:
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Reps_set'
+
+  /users:
+    get:
+      tags:
+        - User
+      summary: Get user recommendations
+      operationId: controller.get_users
+      parameters:
+        - name: limit
+          in: query
+          required: false
+          schema:
+            type: integer
+            minimum: 1
+        - name: randomize
+          in: query
+          required: false
+          schema:
+            type: boolean
+      responses:
+        200:
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/User'
+
+
+
+
+components:
+  schemas:
+    Exercise:
+      type: object
+      properties:
+        name:
+          type: string
+        body_part:
+          type: string
+        equipment:
+          type: string
+        target:
+          type: string
+        instructions:
+          type: string
+
+    Food:
+      type: object
+      properties:
+        name:
+          type: string
+        diet:
+          type: string
+        meal_type:
+          type: string
+        cal:
+          type: number
+        fat:
+          type: number
+        carb:
+          type: number
+        protein:
+          type: number
+
+    Nutrition:
+      type: object
+      properties:
+        nutrition_id:
+          type: integer
+        nutrition_recomend:
+          type: string
+        goal:
+          type: string
+        exercise_recommend:
+          type: string
+
+    Reps_set:
+      type: object
+      properties:
+        reps_id:
+          type: integer
+        goal:
+          type: string
+        sets:
+          type: integer
+        reps:
+          type: integer
+        weight_lifting:
+          type: string
+        rest:
+          type: integer
+        stretching:
+          type: integer
+
+
+    User:
+      type: object
+      properties:
+        user_id:
+          type: string
+        ts:
+          type: string
+        name:
+          type: string
+        gender:
+          type: string
+        age:
+          type: integer
+        weight:
+          type: number
+        height:
+          type: number
+        level:
+          type: string
+        goal:
+          type: string
+        target:
+          type: string
