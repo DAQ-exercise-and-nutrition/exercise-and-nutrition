@@ -63,27 +63,30 @@ Before getting started with the A Guide to Exercise and Nutrition project, ensur
    
    <img width="636" alt="Screenshot 2566-11-29 at 01 05 42" src="https://github.com/DAQ-exercise-and-nutrition/exercise-and-nutrition/assets/92836354/2851982f-2815-4af6-b590-8aa770453c9f">
 
-### Backend Installation
+### Installation
 
-1. Clone the repository to your local machine:
+Clone the repository
 
    ```bash
-   git clone https://github.com/DAQ-exercise-and-nutrition/exercise-and-nutrition-backend.git
+   git clone https://github.com/DAQ-exercise-and-nutrition/exercise-and-nutrition.git
    ```
 
-2. Change into the project directory:
+
+### Backend Installation
+
+1. Change into the project directory:
 
    ```bash
    cd exercise-and-nutrition-backend
    ```
 
-3. Create a virtual environment (optional but recommended):
+2. Create a virtual environment (optional but recommended):
 
    ```bash
    python -m venv venv
    ```
 
-4. Activate the virtual environment:
+3. Activate the virtual environment:
 
    - On Windows:
 
@@ -97,7 +100,7 @@ Before getting started with the A Guide to Exercise and Nutrition project, ensur
      source venv/bin/activate
      ```
 
-5. Install dependencies:
+4. Install dependencies:
 
    ```bash
    pip install -r requirements.txt
@@ -123,6 +126,30 @@ For detailed information on the API endpoints and usage, refer to the API docume
 
 Put `exercise-and-nutrition-api.yaml` in here [swagger editor](https://editor.swagger.io/)
 
+
+### Frontend Installation
+
+1. Change into the project directory:
+
+   ```bash
+   cd exercise-and-nutrition-frontend
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+### Running the App
+
+Now that you have installed the dependencies, you can run the app locally.
+
+```bash
+npm start
+```
+
+This command starts the development server. Open [http://localhost:3000](http://localhost:3000) in your browser to explore the Exercise and Nutrition Guide.
 
 
 ## License
