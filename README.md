@@ -31,7 +31,7 @@ With the increasing emphasis on health and fitness, the demand for accurate and 
 
 
 
-## Data Visualization
+## Project overview and features
 
 1. User Profile Cards: Each card contains an avatar, along with details such as gender, age, weight, height, fitness goal, target body part, fitness level, and basal metabolic rate (BMR). The cards have a 'Analyze' button, suggesting interactivity for further analysis or recommendations
 2. Exercise Recommendation Panel: This section pops up when a user's 'Analyze' button is clicked. It provides a customized exercise plan with the number of sets, repetitions, and rest time. Specific exercises are listed with icons, indicating the body part targeted and the equipment needed. It also includes weightlifting and stretching advice.
