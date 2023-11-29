@@ -8,6 +8,14 @@ The primary objective of the API is to provide personalized exercise and nutriti
 
 With the increasing emphasis on health and fitness, the demand for accurate and personalized advice is on the rise. This API addresses this need by utilizing various data sources to deliver reliable recommendations for exercise routines and nutritional intake.
 
+## Project overview and features
+
+1. User Profile Cards: Each card contains an avatar, along with details such as gender, age, weight, height, fitness goal, target body part, fitness level, and basal metabolic rate (BMR). The cards have a 'Analyze' button, suggesting interactivity for further analysis or recommendations
+2. Exercise Recommendation Panel: This section pops up when a user's 'Analyze' button is clicked. It provides a customized exercise plan with the number of sets, repetitions, and rest time. Specific exercises are listed with icons, indicating the body part targeted and the equipment needed. It also includes weightlifting and stretching advice.
+3. Food Recommendation Panel: Corresponding to the exercise panel, this area offers dietary advice with nutritional focus, such as low-carb and low-fat options. It suggests a frequency for cardio exercises and lists recipes with their caloric content and macronutrient breakdown.
+4. General Exercise Database: A collection of exercises is displayed, each with a specific focus on a body part, the required equipment, and the exercise target. This database appears to be searchable, allowing users to find exercises tailored to their needs.
+5. Food Database: Similar to the exercise database, a variety of foods are listed with their caloric values and meal types. The diet type is also specified, indicating if the meal is balanced or fits other dietary requirements.
+
 ## Overall Architecture
 <img width="1330" alt="Screenshot 2566-11-29 at 00 46 51" src="https://github.com/DAQ-exercise-and-nutrition/exercise-and-nutrition/assets/92836354/ac575683-c8a5-4d7c-8fae-3b5772cc3e8b">
 
@@ -28,16 +36,6 @@ With the increasing emphasis on health and fitness, the demand for accurate and 
 
 - Nutritions
 <img width="673" alt="Screenshot 2566-11-29 at 00 53 16" src="https://github.com/DAQ-exercise-and-nutrition/exercise-and-nutrition/assets/92836354/5481c36d-7fe0-4276-a8aa-925c56747c08">
-
-
-
-## Project overview and features
-
-1. User Profile Cards: Each card contains an avatar, along with details such as gender, age, weight, height, fitness goal, target body part, fitness level, and basal metabolic rate (BMR). The cards have a 'Analyze' button, suggesting interactivity for further analysis or recommendations
-2. Exercise Recommendation Panel: This section pops up when a user's 'Analyze' button is clicked. It provides a customized exercise plan with the number of sets, repetitions, and rest time. Specific exercises are listed with icons, indicating the body part targeted and the equipment needed. It also includes weightlifting and stretching advice.
-3. Food Recommendation Panel: Corresponding to the exercise panel, this area offers dietary advice with nutritional focus, such as low-carb and low-fat options. It suggests a frequency for cardio exercises and lists recipes with their caloric content and macronutrient breakdown.
-4. General Exercise Database: A collection of exercises is displayed, each with a specific focus on a body part, the required equipment, and the exercise target. This database appears to be searchable, allowing users to find exercises tailored to their needs.
-5. Food Database: Similar to the exercise database, a variety of foods are listed with their caloric values and meal types. The diet type is also specified, indicating if the meal is balanced or fits other dietary requirements.
 
 ## Prerequisites
 
