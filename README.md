@@ -63,7 +63,66 @@ Before getting started with the A Guide to Exercise and Nutrition project, ensur
    
    <img width="636" alt="Screenshot 2566-11-29 at 01 05 42" src="https://github.com/DAQ-exercise-and-nutrition/exercise-and-nutrition/assets/92836354/2851982f-2815-4af6-b590-8aa770453c9f">
 
-4. Run both backend and frontend folder follwing inside README instruction.
+### Backend Installation
+
+1. Clone the repository to your local machine:
+
+   ```bash
+   git clone https://github.com/DAQ-exercise-and-nutrition/exercise-and-nutrition-backend.git
+   ```
+
+2. Change into the project directory:
+
+   ```bash
+   cd exercise-and-nutrition-backend
+   ```
+
+3. Create a virtual environment (optional but recommended):
+
+   ```bash
+   python -m venv venv
+   ```
+
+4. Activate the virtual environment:
+
+   - On Windows:
+
+     ```bash
+     .\venv\Scripts\activate
+     ```
+
+   - On macOS/Linux:
+
+     ```bash
+     source venv/bin/activate
+     ```
+
+5. Install dependencies:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+### Configuration
+
+Edit the `config.py` file with your database connection details, and any other necessary configurations.
+
+### Running the Backend
+
+Now that you have installed the dependencies and configured the backend, you can run it locally.
+
+```bash
+python app.py
+```
+
+The backend will start, and you can access the API at `http://127.0.0.1:8080/exercise-and-nutrition-api/v3`.
+
+### API Documentation
+
+For detailed information on the API endpoints and usage, refer to the API documentation.
+
+Put `exercise-and-nutrition-api.yaml` in here [swagger editor](https://editor.swagger.io/)
+
 
 
 ## License
