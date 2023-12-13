@@ -10,7 +10,7 @@ With the increasing emphasis on health and fitness, the demand for accurate and 
 
 ## Team members
 
-|  No.  | Student ID | First name  | Last name  | Field | Faculty   | University   |
+|  No.  | Student ID | First name  | Last name  | Department | Faculty   | University   |
 |---|---|---|---|---|---|---|
 | 1 | 6410546114 | Jirasak | Tumbal  | Software and knowledge engineering  | Engineering  | Kasetsart University  |
 | 2 | 6410545771 | Warat  | Poovorakit | Software and knowledge engineering  | Engineering  | Kasetsart University  |
