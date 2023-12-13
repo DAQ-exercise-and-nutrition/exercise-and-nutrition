@@ -8,6 +8,17 @@ The primary objective of the API is to provide personalized exercise and nutriti
 
 With the increasing emphasis on health and fitness, the demand for accurate and personalized advice is on the rise. This API addresses this need by utilizing various data sources to deliver reliable recommendations for exercise routines and nutritional intake.
 
+## Team members
+
+|  No.  | Student ID | First name  | Last name  | Field | Faculty   | University   |
+|---|---|---|---|---|---|---|
+| 1 | 6410546114 | Jirasak | Tumbal  | Software and knowledge engineering  | Engineering  | Kasetsart University  |
+| 2 | 6410545771 | Warat  | Poovorakit | Software and knowledge engineering  | Engineering  | Kasetsart University  |
+| 3 | 6410545762 | Navathon   | Limamapar | Software and knowledge engineering  | Engineering  | Kasetsart University  |
+| 4 | 6410546319 | Setthanan  | Thongpanchang | Software and knowledge engineering  | Engineering  | Kasetsart University  |
+
+
+
 ## Project overview and features
 
 1. User Profile Cards: Each card contains an avatar, along with details such as gender, age, weight, height, fitness goal, target body part, fitness level, and basal metabolic rate (BMR). The cards have a 'Analyze' button, suggesting interactivity for further analysis or recommendations
